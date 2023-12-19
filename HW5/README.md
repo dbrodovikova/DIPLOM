@@ -8,7 +8,10 @@
 3) запустите каждый сервис на отдельной ноде, т.е. на каждой ноде должно быть по 2 работающих контейнера
 4) выводы зафиксировать, покажите docker stack ps для каждого сервиса.
 
-![alt text](http://GB/HW5/source/Screenshot_1.png)
+![alt text]https://github.com/dbrodovikova/GB/tree/main/HW5/source/Screenshot_1.png)
+
+
+
 ![command for linux containerization](https://HW5/source/Screenshot_2.png)
 ![command for linux containerization](https://HW5/source/Screenshot_3.png)
 ![command for linux containerization](https://HW5/source/Screenshot_4.png)
