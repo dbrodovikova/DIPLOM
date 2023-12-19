@@ -7,6 +7,8 @@
 2) далее необходимо создать 3 сервиса в каждом окружении (dev, prod, lab)
 3) запустите каждый сервис на отдельной ноде, т.е. на каждой ноде должно быть по 2 работающих контейнера
 4) выводы зафиксировать, покажите docker stack ps для каждого сервиса.
+5) 
+![Screenshot_1](https://github.com/dbrodovikova/GB/assets/64835244/0b752911-96c2-4bd4-bbc8-0c19e751cbf3)
 
 ![alt text]https://github.com/dbrodovikova/GB/tree/main/HW5/source/Screenshot_1.png)
 
