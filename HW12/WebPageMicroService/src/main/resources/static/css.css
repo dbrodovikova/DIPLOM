@@ -1,0 +1,43 @@
+.wrap {
+    text-align: center;
+    width: fit-content;
+}
+
+.list__text {
+    font-size: 20px;
+    line-height: 150%;
+}
+
+.table__list {
+    border: 1px solid black;
+    text-align: center;
+}
+
+.table__list th {
+    border: 1px solid black;
+    width: 250px;
+    height: 30px;
+}
+
+.table__list tr {
+    border: 1px solid black;
+}
+
+.table__list td {
+    border: 1px solid black;
+    width: 250px;
+    height: 30px;
+}
+
+.table__list .numberCount {
+    width: 80px;
+}
+
+.nav {
+    margin-top: 50px;
+}
+
+.nav a {
+    padding-left: 20px;
+    font-size: 20px;
+}

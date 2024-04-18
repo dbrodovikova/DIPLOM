@@ -1,0 +1,15 @@
+server:
+  port: 8380
+  error:
+    include-message: always # Выводить сообщение в отловленной ошибке
+
+eureka:
+  client:
+    serviceUrl:
+      defaultZone: http://localhost:8761/eureka
+  instance:
+    prefer-ip-address: true
+    status-page-url-path: ${spring.cloud.client.hostname}
+spring:
+  application:
+    name: web-pages

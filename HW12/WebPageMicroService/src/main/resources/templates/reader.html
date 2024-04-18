@@ -1,0 +1,25 @@
+<!doctype html>
+<html lang="ru" xmlns:th="http://www.thymeleaf.org">
+<head>
+  <meta charset="UTF-8">
+  <meta content="width=device-width, user-scalable=no, initial-scale=1.0, maximum-scale=1.0, minimum-scale=1.0"
+        name="viewport">
+  <meta content="ie=edge" http-equiv="X-UA-Compatible">
+  <link href="/css.css" rel="stylesheet">
+  <title>Читатель</title>
+</head>
+<body>
+<h1 th:text="|Читатель ${reader.firstName} ${reader.lastName}|"></h1>
+<p class="list__text">Список книг на руках</p>
+<ol>
+  <li class="list__text" th:each="book : ${bookListReader}" th:text="${book.book.title}"
+      th:unless="${#lists.isEmpty(bookListReader)}"></li>
+</ol>
+<p class="list__text" th:if="${#lists.isEmpty(bookListReader)}">Выданных книг нет</p>
+<nav class="nav">
+  <a href="/ui/issuance">Таблица выдачи</a>
+  <a href="/ui/book">Список книг</a>
+  <a href="/ui/reader">Список читателей</a>
+</nav>
+</body>
+</html>

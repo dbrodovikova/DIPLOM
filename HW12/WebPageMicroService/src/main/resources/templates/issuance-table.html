@@ -1,0 +1,39 @@
+<!doctype html>
+<html lang="en" xmlns:th="http://www.thymeleaf.org">
+<head>
+  <meta charset="UTF-8">
+  <meta content="width=device-width, user-scalable=no, initial-scale=1.0, maximum-scale=1.0, minimum-scale=1.0"
+        name="viewport">
+  <meta content="ie=edge" http-equiv="X-UA-Compatible">
+  <link href="/css.css" rel="stylesheet" th:href="@{/css.css}">
+  <title>Выдача книг читателем</title>
+</head>
+<body>
+<div class="wrap">
+  <h1>Таблица выдачи книг читателям</h1>
+  <table class="table__list">
+    <tr>
+      <th class="numberCount">№ п.п</th>
+      <th>Книга</th>
+      <th>Читатель</th>
+      <th>Когда взял</th>
+      <th>Когда вернул</th>
+    </tr>
+    <tr th:each="issuance : ${issuanceList}">
+      <td class="numberCount" th:text="${issuance.id}"></td>
+      <td th:text="${issuance.book.title}"></td>
+      <td th:text="|${issuance.reader.firstName} ${issuance.reader.lastName}|"></td>
+      <td th:text="${issuance.issuance_at}"></td>
+      <td th:text="${issuance.returned_at}"></td>
+    </tr>
+  </table>
+  <p class="list__text" th:if="${#lists.isEmpty(issuanceList)}">Книги не кому не выдавались</p>
+  <nav class="nav">
+    <a href="/ui/issuance">Таблица выдачи</a>
+    <a href="/ui/book">Список книг</a>
+    <a href="/ui/reader">Список читателей</a>
+  </nav>
+</div>
+
+</body>
+</html>
